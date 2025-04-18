@@ -282,13 +282,33 @@ Got an idea or want to contribute? Fork this repo and raise a pull request or op
 ## 📬 Contact
 
 For partnerships, suggestions, or feedback, reach out at:  
-📧 **paisatrack@support.in**
+📧 **hello@skwasimakram.com**
 
 ---
 
 ## ⭐ Show Your Support
 
 If you like this project, give it a ⭐ on GitHub and share it with your friends and family!
+
+---
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+## Author
+**Develope By** - [Sk Wasim Akram](https://github.com/skwasimakram13)
+
+- 👨‍💻 All of my projects are available at [https://skwasimakram.com](https://skwasimakram.com)
+
+- 📝 I regularly write articles on [https://blog.skwasimakram.com](https://blog.skwasimakram.com)
+
+- 📫 How to reach me **hello@skwasimakram.com**
+
+- 🧑‍💻 Google Developer Profile [https://g.dev/skwasimakram](https://g.dev/skwasimakram)
+
+- 📲 LinkedIn [https://www.linkedin.com/in/sk-wasim-akram](https://www.linkedin.com/in/sk-wasim-akram)
 
 ---
 
