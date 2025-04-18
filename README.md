@@ -92,9 +92,89 @@ In India, people commonly use UPI, bank transfers, wallets, and debit cards for 
 - `Retrofit` for optional backend sync
 - (Optional) `Firebase` for backup & sync
 
+### 💻 Android App (Java) Structure
+```java
+📁 app/
+├── 📁 activities/
+│   ├── MainActivity.java
+│   ├── PermissionsActivity.java
+│   ├── TransactionDetailActivity.java
+│   ├── ReportsActivity.java
+│   └── SettingsActivity.java
+│
+├── 📁 adapters/
+│   ├── TransactionAdapter.java
+│   └── CategoryAdapter.java
+│
+├── 📁 models/
+│   ├── Transaction.java
+│   ├── Category.java
+│   └── User.java
+│
+├── 📁 utils/
+│   ├── SmsParser.java
+│   ├── PermissionUtils.java
+│   └── NetworkUtils.java
+│
+├── 📁 services/
+│   └── SmsReceiver.java (BroadcastReceiver for SMS)
+│
+├── 📁 database/
+│   ├── DBHelper.java
+│   └── TransactionDAO.java
+│
+├── 📁 network/
+│   ├── ApiClient.java
+│   ├── ApiService.java
+│   └── ApiResponse.java
+│
+├── 📁 charts/
+│   └── ExpenseChartManager.java
+│
+├── 📁 res/
+│   ├── layout/
+│   ├── drawable/
+│   ├── values/
+│   └── xml/
+│
+└── AndroidManifest.xml
+```
+
 ### Backend (Optional)
 - `Node.js` or `PHP` + `MySQL`
 - For cloud sync, analytics, and secure backup
+
+## 🌐 Backend (PHP + MySQL) Structure
+```php
+📁 finance_tracker_api/
+├── 📁 config/
+│   └── database.php (MySQL DB connection)
+│
+├── 📁 models/
+│   ├── User.php
+│   ├── Transaction.php
+│   └── Category.php
+│
+├── 📁 controllers/
+│   ├── register.php
+│   ├── login.php
+│   ├── add_transaction.php
+│   ├── get_transactions.php
+│   ├── get_report.php
+│   └── sync_data.php
+│
+├── 📁 helpers/
+│   └── auth.php (JWT or token verification)
+│
+├── 📁 utils/
+│   └── sanitizer.php
+│
+├── 📁 uploads/
+│   └── (if users export reports)
+│
+├── .htaccess
+└── index.php
+```
 
 ---
 
