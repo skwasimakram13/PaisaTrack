@@ -92,7 +92,7 @@ In India, people commonly use UPI, bank transfers, wallets, and debit cards for 
 - `Retrofit` for optional backend sync
 - (Optional) `Firebase` for backup & sync
 
-### 💻 Android App (Java) Structure
+## 💻 Android App (Java) Structure
 ```java
 📁 app/
 ├── 📁 activities/
@@ -175,6 +175,65 @@ In India, people commonly use UPI, bank transfers, wallets, and debit cards for 
 ├── .htaccess
 └── index.php
 ```
+---
+## 🗃️ MySQL Database Structure
+
+### `users` table
+
+| Column      | Type        | Description         |
+|-------------|-------------|---------------------|
+| id          | INT (PK)    | User ID             |
+| name        | VARCHAR     | Full name           |
+| email       | VARCHAR     | Email address       |
+| password    | VARCHAR     | Hashed password     |
+| phone       | VARCHAR     | Mobile number       |
+| created_at  | TIMESTAMP   | Account creation    |
+
+### `transactions` table
+
+| Column     | Type       | Description                       |
+|------------|------------|-----------------------------------|
+| id         | INT (PK)   | Transaction ID                    |
+| user_id    | INT (FK)   | Linked to `users.id`              |
+| amount     | DECIMAL    | Transaction amount                |
+| category   | VARCHAR    | Spending category                 |
+| merchant   | VARCHAR    | Merchant or payee name            |
+| upi_id     | VARCHAR    | UPI ID (if available)             |
+| type       | VARCHAR    | Debit/Credit                      |
+| date       | DATETIME   | Transaction date                  |
+| notes      | TEXT       | Optional user notes               |
+
+### `categories` table
+
+| Column     | Type       | Description                                |
+|------------|------------|--------------------------------------------|
+| id         | INT (PK)   | Category ID                                |
+| name       | VARCHAR    | Category name (e.g., Food, Travel)         |
+| icon       | VARCHAR    | Icon or emoji name                         |
+| user_id    | INT (nullable) | Null for default, user ID for custom |
+
+---
+
+## 🔄 API Endpoints (Sample)
+
+| Endpoint              | Method | Description                              |
+|-----------------------|--------|------------------------------------------|
+| `/register.php`       | POST   | Register a new user                      |
+| `/login.php`          | POST   | Login and receive auth token             |
+| `/add_transaction.php`| POST   | Add a new transaction                    |
+| `/get_transactions.php`| GET   | Get all transactions for a user          |
+| `/get_report.php`     | GET    | Fetch weekly/monthly spend stats         |
+| `/sync_data.php`      | POST   | Sync offline transactions to server      |
+
+---
+
+## 🔐 Security
+
+- 🔑 Use **token-based authentication** (JWT or session tokens)
+- 🛡️ Validate all input on the **server-side**
+- 🔒 Always use **HTTPS** for API communications
+- 🧹 Sanitize user input to avoid SQL injection/XSS attacks
+- 🔐 Store passwords using hashing algorithms like **bcrypt**
 
 ---
 
