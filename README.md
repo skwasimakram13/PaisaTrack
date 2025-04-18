@@ -1,4 +1,4 @@
-# PaisaTrack – Smart Indian Expense Tracker 🇮🇳💸
+# PaisaTrack – Smart Indian Expense Tracker 📱💸
 
 > Simple, smart, and secure way to automatically track your daily expenses from SMS, UPI, and bank alerts.
 
