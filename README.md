@@ -3,6 +3,11 @@
 > Simple, smart, and secure way to automatically track your daily expenses from SMS, UPI, and bank alerts.
 
 ---
+## Live Demos
+- **Live Web Demo** - [https://paisatrackweb.netlify.app](https://paisatrackweb.netlify.app)
+- **Android App Demo** - Coming very soon
+
+---
 
 ## ✅ Problem Statement
 
