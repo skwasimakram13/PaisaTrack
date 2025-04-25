@@ -302,6 +302,11 @@ This project is licensed under the MIT License.
 
 ---
 
+## Badges
+[![trophy](https://github-profile-trophy.vercel.app/?username=ryo-ma)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+
 ## Author
 **Develope By** - [Sk Wasim Akram](https://github.com/skwasimakram13)
 
