@@ -4,7 +4,7 @@
 
 ---
 ## Live Demos
-- **Live Web Demo** - [https://paisatrackweb.netlify.app](https://paisatrackweb.netlify.app)
+- **Live Web Demo** - <a href="https://paisatrackweb.netlify.app" target="_blank" rel="noopener noreferrer">https://paisatrackweb.netlify.app</a>
 - **Android App Demo** - Coming very soon
 
 ---
